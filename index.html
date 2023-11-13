@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Character encoding declaration -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport settings for responsive design -->
+    <title>URL Shortener</title> <!-- Page title displayed in the browser tab -->
+    <link rel="stylesheet" href="styles.css"> <!-- Link to an external CSS stylesheet for styling -->
+</head>
+<body>
+    <div class="container">
+        <h1>URL Shortener</h1> <!-- Main heading of the page -->
+        <form id="urlForm"> <!-- Form for entering the original URL -->
+            <input type="url" id="originalURL" placeholder="Enter the URL to shorten" required><!-- Input field for entering the original URL with placeholder text -->
+            <button type="submit">Shorten URL</button> <!-- Submit button for the form -->
+        </form>
+        <div id="shortenedURL">
+            <!-- Container for displaying the shortened URL, which will be updated dynamically by JavaScript -->
+        </div>
+    </div>
+    <script src="converter.js"></script> <!-- Link to JavaScript file -->
+</body>
+</html>
