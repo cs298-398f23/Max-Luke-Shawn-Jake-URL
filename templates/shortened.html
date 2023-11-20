@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortened</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>URL Shortened</h1>
+    <p>Your shortened URL is: <a href="{{ url_for('redirect_to_original', short_url=short_url) }}" target="_blank">{{ request.host }}{{ url_for('redirect_to_original', short_url=short_url) }}</a></p>
+</body>
+</html>
