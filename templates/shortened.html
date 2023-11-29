@@ -16,7 +16,7 @@
     </script>
     <div class="container">
         <h1>URL Shortened</h1>
-        <p>Your shortened URL is: <a href="{{ url_for('redirect_to_original', short_url=short_url) }}" target="_blank">{{ request.host }}{{ url_for('redirect_to_original', short_url=short_url) }}</a></p>
+        <p>Your shortened URL is: <a href="{{ short_url }}" target="_blank">{{ short_url }}</a></p>
     </div>
 </body>
 </html>
