@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>{{ title }}</h1>
+        <table>
+            <tr>
+                <!-- Display headers based on the context -->
+                {% for key, _ in data[0].items() %}
+                    <th>{{ key }}</th>
+                {% endfor %}
+            </tr>
+            <!-- Display data based on the context -->
+            {% for item in data %}
+                <tr>
+                    {% for _, value in item.items() %}
+                        <td>{{ value }}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </table>
+        <a href="{{ url_for('dashboard') }}">Back to Dashboard</a>
+    </div>
+</body>
+</html>

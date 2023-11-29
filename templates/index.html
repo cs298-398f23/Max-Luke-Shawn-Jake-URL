@@ -9,10 +9,27 @@
 <body>
     <div class="container">
         <h1>URL Shortener</h1>
-        <form action="/shorten" method="post">
+        <!-- Add the expiration field in the form -->
+        <form action="/index" method="post">
             <label for="original_url">Enter URL:</label>
             <input type="text" id="original_url" name="original_url" required>
+
+            <label for="custom_short_url">Custom Short URL:</label>
+            <input type="text" id="custom_short_url" name="custom_short_url" required>
+
+            <!-- Add expiration dropdown -->
+            <label for="expiration">Expiration Time:</label>
+            <select id="expiration" name="expiration" required>
+                <option value="1">1 minute</option>
+                <option value="60">1 hour</option>
+                <option value="1440">1 day</option>
+            </select>
+
             <button type="submit">Shorten URL</button>
+
+            {% if error %}
+                <p class="error">{{ error }}</p>
+            {% endif %}
         </form>
     </div>
 </body>
