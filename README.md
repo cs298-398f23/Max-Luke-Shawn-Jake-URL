@@ -7,9 +7,9 @@
     - Enter the command "redis-server"
 2. Launch the application
     - Open Visual Studio Code
-    - Launch the app.py file found within the repository
+    - Launch the app.py file found within the repository in VS code terminal
     - Go to the website located in the terminal
-        -Ex: "Running on http://127.0.0.1:5000"
+        -Ex: "Running on http://127.0.0.1:8000"
 3. Shutting down the application
     - Stop the Redis server
         - Within the terminal hosting Redis press "ctrl + c"
