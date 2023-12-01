@@ -3,6 +3,7 @@ from flask_login import LoginManager, UserMixin, login_user, login_required, log
 import redis
 import random
 import string
+import unittest
 from urllib.parse import quote, unquote
 from flask import abort
 from urllib.parse import urlparse
