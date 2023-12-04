@@ -2,17 +2,13 @@
 **Authors:** Max, Jake, Luke, Shawn
 ## Local Host
 ```
-1. Start a Redis server
-    - Open a new terminal window
-    - Enter the command "redis-server"
-2. Launch the application
-    - Open Visual Studio Code
-    - Launch the app.py file found within the repository in VS code terminal
-    - Go to the website located in the terminal
-        -Ex: "Running on http://127.0.0.1:8000"
-3. Shutting down the application
-    - Stop the Redis server
-        - Within the terminal hosting Redis press "ctrl + c"
-    - Stop the application
-        - Within the terminal hosting the application press "ctrl + c"
+Launching the application
+    1. Open terminal within the repos main directory
+    2. Run the command "./localStartup.sh"
+        - If you receive permission denied run the command "chmod +x localStartup.sh"
+            - Run the command "./localStartup.sh" again
+    3. Go to the website located in the terminal
+            -Ex: "Running on http://127.0.0.1:8000"
+Shutting down the application
+    - Within the terminal hosting the application press "ctrl + c"
 ```
