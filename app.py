@@ -12,8 +12,8 @@ from datetime import datetime, timedelta
 def create_app():
     app = Flask(__name__)
     
-    redis_client_users = redis.StrictRedis(host='localhost', port=6379, db=0)
-    redis_client_urls = redis.StrictRedis(host='localhost', port=6379, db=1)
+    redis_client_users = redis.StrictRedis(host='54.242.110.1', port=6379, db=0)
+    redis_client_urls = redis.StrictRedis(host='54.242.110.1', port=6379, db=1)
 
     app.secret_key = 'your_secret_key'
     login_manager = LoginManager(app)
